@@ -19,15 +19,15 @@ app.use(bodyParser.json());
   const cors = require('cors');
   app.use(cors());
 
-app.use(express.static(path.resolve(__dirname, './client/', 'build')));
+// app.use(express.static(path.resolve(__dirname, './client/', 'build')));
 
 //app setup
 routes(app);
 
 
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './client/', 'build', 'index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, './client/', 'build', 'index.html'));
+// });
 
 
 
